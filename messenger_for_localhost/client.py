@@ -5,7 +5,7 @@ from tkinter import *
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
 
-hostIp = "10.0.0.250"
+hostIp = "127.0.0.1"
 portNumber = 7500
 
 clientSocket.connect((hostIp, portNumber))
